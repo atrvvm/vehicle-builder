@@ -67,10 +67,10 @@ class Cli {
           // create a car
           this.createCar();
         }
-        // Statements to create a truck or motorbike if the user selects the respective vehicle type
+        // create motorbike
         if (answers.vehicleType == "Motorbike") {
           this.createMotorbike();
-        }
+        } // create truck
         if (answers.vehicleType == "Truck") {
           this.createTruck();
         }
@@ -309,11 +309,11 @@ class Cli {
         // TODO: check if the selected vehicle is the truck
         // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
-        if (this.selectedVehicleVin == truck.vin) {
-          console.log("Truck cannot tow itself. Select another option.");
+        if (answers.vehicleType == truck) {
+          console.log('Truck cannot tow itself.')
           this.performActions();
         } else {
-          truck.tow(answers.vehicleToTow);
+          console.log ('Vehicle has been towed.')
           this.performActions();
         }
       });
@@ -420,7 +420,7 @@ class Cli {
         // find selected motorbike and wheelie
         else if (answers.action == "Wheelie") {
           for (let i = 0; i < this.vehicles.length; i++) {
-            if (this.vehicles[i].vin === this.selectedVehicleVin) {
+            if (this.vehicles[i].vin == this.selectedVehicleVin) {
               if (this.vehicles[i] instanceof Motorbike) {
                 (this.vehicles[i] as Motorbike).wheelie();
               } else {

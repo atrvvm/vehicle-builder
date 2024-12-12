@@ -41,8 +41,6 @@ class Motorbike extends Vehicle {
     // Constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
     if (wheels.length != 2) {
       this.wheels = [new Wheel(), new Wheel()];
-    } else {
-      this.wheels = wheels;
     }
   }
 
@@ -61,8 +59,8 @@ class Motorbike extends Vehicle {
     console.log(`Make: ${this.make}`);
     console.log(`Model: ${this.model}`);
     console.log(`Year: ${this.year}`);
-    console.log(`Weight: ${this.weight} lbs`);
-    console.log(`Top Speed: ${this.topSpeed} mph`);
+    console.log(`Weight: ${this.weight}`);
+    console.log(`Top Speed: ${this.topSpeed}`);
     console.log(`Color: ${this.color}`);
     console.log(`Wheels: ${this.wheels}`);
   }

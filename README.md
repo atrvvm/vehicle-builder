@@ -1,4 +1,4 @@
-# 08 TypeScript and OOP: Vehicle Builder
+# TypeScript and OOP: Vehicle Builder
 
 ## Task
 
@@ -35,6 +35,10 @@ THEN I see the result of the action in the command-line
 WHEN I complete the process of performing an action
 THEN I can perform additional actions until I choose to exit
 ```
+## Demo Preview
+To view the full demo, the .MOV file has been uploaded to the repo.
+<video src='(https://github.com/user-attachments/assets/c389dd3b-c5e5-4b92-af29-494d7467ac9e)'></video>
+
 
 ## Helpful TypeScript Resources
 
@@ -48,3 +52,6 @@ THEN I can perform additional actions until I choose to exit
 
 ---
 &copy; 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
